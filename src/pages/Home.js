@@ -46,7 +46,8 @@ export default function Home() {
                             label={item.label}
                             onClick={() => {
                                 setType(item);
-                                setSeconds(item.initial * TIME_CONSTRAINT)
+                                setTimeOnInit(new Date());
+                                setSeconds(item.initial * TIME_CONSTRAINT);
                             }}
                         />
                     ))}
